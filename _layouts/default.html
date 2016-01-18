@@ -1,19 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html lang="de-DE">
 
   {% include head.html %}
 
-  <body>
+  <body class="homepage">
 
-    {% include header.html %}
+    <div class="overlay"></div>
 
-    <div class="page-content">
-      <div class="wrapper">
+    <div class="outer-wrapper">
+      <div class="page-wrapper">
+
+        {% include header.html %}
+
         {{ content }}
+
+        {% include footer.html %}
+
       </div>
     </div>
 
-    {% include footer.html %}
+    {% include modals.html %}
+
+    {% include javascripts.html %}
 
   </body>
 

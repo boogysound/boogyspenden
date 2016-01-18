@@ -1,38 +1,19 @@
-<footer class="site-footer">
-
-  <div class="wrapper">
-
-    <h2 class="footer-heading">{{ site.title }}</h2>
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li>{{ site.title }}</li>
-          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-2">
-        <ul class="social-media-list">
-          {% if site.github_username %}
-          <li>
-            {% include icon-github.html username=site.github_username %}
-          </li>
-          {% endif %}
-
-          {% if site.twitter_username %}
-          <li>
-            {% include icon-twitter.html username=site.twitter_username %}
-          </li>
-          {% endif %}
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <p>{{ site.description }}</p>
-      </div>
+<footer id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-sm-8">
+                <div class="left">
+                    <span>(C) 2015 {{ site.title }}. All Right Reserved</span>
+                    <div class="bg-left"></div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <div class="right">
+                    <span><a href="#top" class="scroll">To Top<i class="arrow_carrot-up_alt2"></i></a></span>
+                    <div class="bg-right"><img src="assets/img/footer-bg.png" alt=""></div>
+                </div>
+            </div>
+        </div>
     </div>
-
-  </div>
-
+    <!--/ .container-->
 </footer>
