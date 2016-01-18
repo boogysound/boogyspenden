@@ -4,4 +4,4 @@ icon: icon_briefcase
 ---
 Lerne _hier_ wie man `König` wird.
 
-Falls man das wirklich will.
+Falls man das wirklich will. also wirklich!
