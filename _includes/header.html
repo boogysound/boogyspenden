@@ -9,6 +9,10 @@
             <div class="brand"><a href="{{ site.baseurl }}/"><img src="assets/img/logo.png" alt="{{ site.title }}"></a></div><!--/.brand-->
             <nav>
                 <ul>
+                    {% assign abschnitte = site.seitenabschnitte | sort: "reihenfolge" %}
+                    {% for abschnitt in abschnitte %}
+                      <li><a class="page-link {% if my_page == current_page %}active{% endif %}" href="{{ site.baseurl }}/#{{ abschnitt.id }}">{{ abschnitt.titel }}</a></li>
+                    {% endfor %}
                     {% for my_page in site.pages %}
                       {% if my_page.title %}
                       <!-- TODO redo the following pseudo code -->

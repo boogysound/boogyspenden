@@ -1,13 +1,33 @@
 ---
-layout: default
+layout: page
 title: Impressum
 permalink: /impressum/
 ---
 
-{{site.data.termine.var1}}
+Kurze Erklärung von den wichtigsten Markdown Formatierungen:
 
-{% for termin in site.data.termine.termine %}
-  {{termin.zeit}}
-{% endfor %}
+# Große Überschrift
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+## Etwas kleiner
+
+### Noch kleiner
+
+#### und so weiter
+
+Text wird einfach so angezeigt,
+wie er getippt wurde.
+
+_Ich bin kursiv_ und **ich bin dick**.
+
+- Vor und
+- nach listen muss
+- jeweils eine komplett leere Zeile sein
+
+und das ist eine sortierte Liste:
+
+1. die
+2. Zahlen
+1. sind
+5. egal und werden trotzdem automatisch korrekt formatiert
+
+[der link text](http://der-link.com)

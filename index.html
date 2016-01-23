@@ -37,7 +37,8 @@ layout: default
 <!--/.hero-slider-->
 
 <div class="page-content">
-    <div class="block" id="features">
+    {% assign angebote = site.seitenabschnitte | where:"id","angebote" | first %}
+    <div class="block" id="{{angebote.id}}">
         <div class="container">
             <div class="row">
               {% for angebot in site.angebote %}
@@ -61,58 +62,41 @@ layout: default
     </div>
     <!--/ .block-->
 
-    <div class="block" id="about-me">
+    {% assign uebermich = site.seitenabschnitte | where:"id","uebermich" | first %}
+    <div class="block" id="{{uebermich.id}}">
         <div class="container">
-            <h2>About Me</h2>
+            <h2>{{uebermich.titel}}</h2>
             <div class="row">
                 <div class="col-md-6 col-sm-6">
                     <div class="center">
-                        <img src="assets/img/author.jpg" class="circle" alt="">
+                        <img src="{{uebermich.bild}}" class="circle" alt="">
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-6">
-                    <h3 class="no-bottom-margin"><strong>Jane Doe</strong></h3>
-                    <h5>A personal mentor</h5>
+                    <h3 class="no-bottom-margin"><strong>{{uebermich.name}}</strong></h3>
+                    <h5>{{uebermich.job_titel}}</h5>
                     <br>
                     <p>
-                        Sed iaculis dapibus tellus eget condimentum. Curabitur ut tellus congue, convallis tortor et,
-                        pellentesque diam. Nullam non dolor eu ligula ultrices pellentesque placerat imperdiet metus.
-                        Etiam lobortis bibendum egestas. In quis massa a felis molestie consequat rhoncus vitae nisl.
-                        In pharetra posuere dictum. In eget metus eu leo rutrum venenatis vitae sit amet elit.
-                        Duis luctus enim enim.
+                        {{uebermich.content}}
                     </p>
                     <div class="numbers">
                         <div class="row">
+                          {% for erfolg in uebermich.erfolge %}
                             <div class="col-md-4 col-sm-4">
                                 <div class="number">
-                                    <figure>68</figure>
-                                    <aside>Persons Mentored</aside>
+                                    <figure>{{erfolg.nummer}}</figure>
+                                    <aside>{{erfolg.titel}}</aside>
                                 </div>
                                 <!--/ .number-->
                             </div>
-                            <!--/ .col-md-4-->
-                            <div class="col-md-4 col-sm-4">
-                                <div class="number">
-                                    <figure>45</figure>
-                                    <aside>Workshops Attended</aside>
-                                </div>
-                                <!--/ .number-->
-                            </div>
-                            <!--/ .col-md-4-->
-                            <div class="col-md-4 col-sm-4">
-                                <div class="number">
-                                    <figure>12</figure>
-                                    <aside>Coaching Certificates</aside>
-                                </div>
-                                <!--/ .number-->
-                            </div>
-                            <!--/ .col-md-4-->
+                          {% endfor %}
                         </div>
                         <!--/ .row-->
                     </div>
                     <!--/ .numbers-->
-                    <hr>
-                    <a href="" class="link arrow">More about me</a>
+                    <!-- TODO Feature link zu aboutme page? -->
+                    <!-- <hr>
+                    <a href="" class="link arrow">More about me</a> -->
                 </div>
                 <!--/ .col-sm-6-->
             </div>
@@ -124,58 +108,39 @@ layout: default
 
     <hr>
 
-
-    <div class="block" id="successful-stories">
+    {% assign referenzen = site.seitenabschnitte | where:"id","referenzen" | first %}
+    <div class="block" id="{{referenzen.id}}">
         <div class="container">
-            <h2>Successful Stories</h2>
+            <h2>{{referenzen.titel}}</h2>
             <div class="row">
                 <div class="col-md-6">
+                  {% assign stories_links = referenzen.stories | where:"spalte","links" %}
+                  {% for story in stories_links %}
                     <div class="story">
-                        <div class="image"><img src="assets/img/person-01.jpg" alt=""></div>
+                        <div class="image"><img src="{{story.bild}}" alt="{{story.name}}"></div>
                         <blockquote>
-                            <p>Praesent cursus nulla non arcu tempor, ut egestas elit tempus. In ac ex fermentum, gravida
-                                felis nec, tincidunt ligula. Sed dapibus mauris ullamcorper.</p>
-                            <footer>Jane Doe</footer>
+                            <p>{{story.geschichte}}</p>
+                            <footer>{{story.name}}</footer>
                         </blockquote>
                         <!--/ blockquote-->
                     </div>
                     <!--/ .story-->
-                    <div class="story">
-                        <div class="image"><img src="assets/img/person-04.jpg" alt=""></div>
-                        <blockquote>
-                            <p>Etiam pulvinar, urna a iaculis sagittis, purus turpis ornare justo, porta volutpat turpis
-                                mi et sapien. Nullam sodales lorem sed pulvinar mattis. Cras gravida, libero in commodo
-                                vehicula, mauris mi finibus leo, quis tincidunt turpis augue vitae lorem.</p>
-                            <footer>Nellie Gibson</footer>
-                        </blockquote>
-                        <!--/ blockquote-->
-                    </div>
-                    <!--/ .story-->
+                  {% endfor %}
                 </div>
                 <!--/ .col-md-6-->
                 <div class="col-md-6">
+                  {% assign stories_rechts = referenzen.stories | where:"spalte","rechts" %}
+                  {% for story in stories_rechts %}
                     <div class="story">
-                        <div class="image"><img src="assets/img/person-02.jpg" alt=""></div>
+                        <div class="image"><img src="{{story.bild}}" alt="{{story.name}}"></div>
                         <blockquote>
-                            <p>Integer efficitur dictum mi ac lobortis. Sed finibus, diam id mollis auctor, odio ligula
-                                sagittis nisl, vitae volutpat metus nisi vitae risus. Donec tempus augue sit amet
-                                malesuada pretium. </p>
-                            <p>Etiam pulvinar, urna a iaculis sagittis, purus turpis ornare justo, porta volutpat
-                                turpis mi et sapien. Nullam sodales lorem sed pulvinar mattis. Cras gravida.</p>
-                            <footer>Catherine Brown</footer>
+                            <p>{{story.geschichte}}</p>
+                            <footer>{{story.name}}</footer>
                         </blockquote>
                         <!--/ blockquote-->
                     </div>
                     <!--/ .story-->
-                    <div class="story">
-                        <div class="image"><img src="assets/img/person-03.jpg" alt=""></div>
-                        <blockquote>
-                            <p>Cras gravida, libero in commodo vehicula, mauris mi finibus leo, quis tincidunt turpis augue vitae lorem.</p>
-                            <footer>Jack Hayes</footer>
-                        </blockquote>
-                        <!--/ blockquote-->
-                    </div>
-                    <!--/ .story-->
+                  {% endfor %}
                 </div>
                 <!--/ .col-md-6-->
             </div>
@@ -188,15 +153,16 @@ layout: default
 
     <div class="space"></div>
 
+    {% assign newsletter = site.seitenabschnitte | where:"id","newsletter" | first %}
     <div class="container">
         <div class="block center">
-            <h2 class="text-color-white half-bottom-margin"><strong>Your Daily Motivation Quote</strong></h2>
+            <h2 class="text-color-white half-bottom-margin"><strong>{{newsletter.cta}}</strong></h2>
             <div class="row">
                 <div class="col-md-6 col-sm-6 col-md-offset-3 col-sm-offset-3">
-                    <form id="form-daily-motivation">
+                    <form id="{{newsletter.id}}">
                         <div class="form-group input-group">
                             <div class="form-status text-color-white"></div>
-                            <input type="text" class="form-control" name="email" placeholder="Enter your e-mail">
+                            <input type="text" class="form-control" name="email" placeholder="{{newsletter.email_platzhalter}}">
                             <span class="input-group-btn"><button class="btn btn-white" type="submit"><i class="arrow_right"></i></button></span>
                         </div>
                     </form>
@@ -206,7 +172,7 @@ layout: default
             </div>
             <!--/ .row-->
             <div class="bg">
-                <img src="assets/img/bg.jpg" alt="">
+                <img src="{{newsletter.hintergrund_bild}}" alt="">
             </div><!--/ .bg-->
         </div>
         <!--/ .block-->
@@ -214,7 +180,7 @@ layout: default
     <!--/ .container-->
 
     <div class="space"></div>
-
+    <!-- 
     <div class="block" id="make-an-appointment">
         <div class="container">
             <h2 class="center">Make an Appointment With Me</h2>
@@ -224,9 +190,9 @@ layout: default
                 </div>
             </div>
         </div>
-        <!--/ .container-->
-        <div class="bg"></div><!--/ .bg-->
-    </div>
+        <!--/ .container--
+        <div class="bg"></div><!--/ .bg--
+    </div> -->
     <!--/ .block-->
 
 </div>

@@ -1,3 +1,9 @@
+# CMS Schnellzugriff
+
+Hier kommst du schnell zu allen wichtigen Dateien, um sie sofort zu bearbeiten:
+
+- ...
+
 # So geht's
 
 Wichtige Hintergrund-Infos zur Seite sind in der `_config.yml` Datei.
@@ -30,3 +36,8 @@ Wichtige Infos zu den Inhalten der Angebote:
   - Externe links müssen immer mit http:// oder https:// beginnen
   - Interne links zu anderen Seiten beginnen mit /
   - Links zu Abschnitten auf der Titelseite beginnen mit # und müssen in Anführungszeichen sein
+
+
+## Seitenabschnitte:
+
+Die Seitenabschnitte haben IDs und eine Reihenfolge. Beide sind wichtig für die Navigation und die Verlinkungen und sollten (erstmal) nicht geändert werden.
