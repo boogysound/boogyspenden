@@ -11,7 +11,7 @@ Hier kommst du schnell zu allen wichtigen Dateien, um sie sofort zu bearbeiten:
 
 # So geht's
 
-Bevor du irgendwas machst, scroll hoch und stell sicher, dass rechts mitte oben in der Box neben `Branch` nicht "master" sondern "gh-pages" steht. Du kannst dort draufklicken und dann auf "gh-pages". Nur Änderungen, die du machst, während links oben "gh-pages" steht, werden auch live auf der Webseite zu sehen sein. 
+Bevor du irgendwas machst, scroll hoch und stell sicher, dass rechts mitte oben in der Box neben `Branch` nicht "master" sondern "gh-pages" steht. Du kannst dort draufklicken und dann auf "gh-pages". Nur Änderungen, die du machst, während links oben "gh-pages" steht, werden auch live auf der Webseite zu sehen sein.
 
 Die wichtigen Elemente der Seite sind Variablen zugewiesen, um die Inhalte leicht bearbeitbar zu machen.
 
@@ -49,6 +49,14 @@ Bilder direkt hochladen kann momentan nur ich. Du musst sie mir also als Email s
 ## Angebote
 
 Die verschiedenen Angebote sind im Ordner `_angebote` in verschiedenen Dateien gespeichert. Du kannst die Dateien umbenennen, löschen oder neue hinzufügen. Halte dich aber unbedingt an das Format der existierenden Dateien. Außerdem sollten es (im aktuellen Setup) nur exakt 4 Angebote sein. Das können wir aber bei Bedarf noch einmal anders gestalten.
+
+### icon:
+
+Für die icons kannst du dir [HIER](http://fortawesome.github.io/Font-Awesome/icons/) eins aussuchen und anklicken. Dort siehst du dann einen icon-code, der so etwa aussieht: `fa-paper-plane`. Diesen kannst du dann einfach einfügen. **Achte aber darauf**, dass du vorher ein `fa ` hinzufügst, wenn du ein Icon von der Seite wählst. Das würde dann zum Beispiel so aussehen:
+
+```
+icon: fa fa-paper-plane
+```
 
 ### karussell_bild:
 
