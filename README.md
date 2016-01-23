@@ -2,7 +2,12 @@
 
 Hier kommst du schnell zu allen wichtigen Dateien, um sie sofort zu bearbeiten:
 
-- [Hintergrundinformationen (Titel, SEO, Email-Adresse, Telefonnummer)](blob/gh-pages/_config.yml)
+- [Hintergrundinformationen (Titel, SEO, Email-Adresse, Telefonnummer, logo)](_config.yml)
+- [Angebote](_angebote/)
+- Abschnitte der Titelseite:
+  - [Über mich](_seitenabschnitte/uebermich.md)
+  - [Referenzen](_seitenabschnitte/referenzen.md)
+  - [Newsletter-Bereich und Kontaktformular](_seitenabschnitte/kontakt.md)
 
 # So geht's
 
