@@ -3,7 +3,7 @@ titel: Reich werden
 icon: icon_box-checked
 karussell_bild: assets/img/slide.jpg
 karussell_titel_klein: Mein Name ist Christian
-karussell_titel_gross: Und ich werde <br>Ihr Leben verändern!
+karussell_titel_gross: <span class="text-color-white">Und ich werde <br>Ihr Leben verändern!</span>
 karussell_cta_titel: Erzähl mir mehr!
 cta_link: http://google.com
 ---
