@@ -153,13 +153,13 @@ layout: default
 
     <div class="space"></div>
 
-    {% assign newsletter = site.seitenabschnitte | where:"id","newsletter" | first %}
+    {% assign kontakt = site.seitenabschnitte | where:"id","kontakt" | first %}
     <div class="container">
         <div class="block center">
-            <h2 class="text-color-white half-bottom-margin"><strong>{{newsletter.cta}}</strong></h2>
+            <h2 class="text-color-white half-bottom-margin"><strong>{{kontakt.cta}}</strong></h2>
             <div class="row">
                 <div class="col-md-6 col-sm-6 col-md-offset-3 col-sm-offset-3">
-                    <form id="{{newsletter.id}}">
+                    <form id="{{kontakt.id}}">
                         <div class="form-group input-group">
                             <div class="form-status text-color-white"></div>
                             <input type="text" class="form-control" name="email" placeholder="{{newsletter.email_platzhalter}}">
@@ -172,7 +172,7 @@ layout: default
             </div>
             <!--/ .row-->
             <div class="bg">
-                <img src="{{newsletter.hintergrund_bild}}" alt="">
+                <img src="{{kontakt.hintergrund_bild}}" alt="">
             </div><!--/ .bg-->
         </div>
         <!--/ .block-->
@@ -180,8 +180,8 @@ layout: default
     <!--/ .container-->
 
     <div class="space"></div>
-    <!-- 
-    <div class="block" id="make-an-appointment">
+
+    <!-- <div class="block" id="make-an-appointment">
         <div class="container">
             <h2 class="center">Make an Appointment With Me</h2>
             <div class="row">
@@ -190,9 +190,8 @@ layout: default
                 </div>
             </div>
         </div>
-        <!--/ .container--
-        <div class="bg"></div><!--/ .bg--
-    </div> -->
+        <div class="bg"></div>
+    </div>  -->
     <!--/ .block-->
 
 </div>
