@@ -11,13 +11,7 @@
                 <ul>
                     {% assign abschnitte = site.seitenabschnitte | sort: "reihenfolge" %}
                     {% for abschnitt in abschnitte %}
-                      <li><a class="page-link {% if my_page == current_page %}active{% endif %}" href="{{ site.baseurl }}/#{{ abschnitt.id }}">{{ abschnitt.titel }}</a></li>
-                    {% endfor %}
-                    {% for my_page in site.pages %}
-                      {% if my_page.title %}
-                      <!-- TODO redo the following pseudo code -->
-                      <li><a class="page-link {% if my_page == current_page %}active{% endif %}" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a></li>
-                      {% endif %}
+                      <li><a class="scroll page-link {% if my_page == current_page %}active{% endif %}" href="{{ site.baseurl }}/#{{ abschnitt.id }}">{{ abschnitt.titel }}</a></li>
                     {% endfor %}
                 </ul>
                 <div class="nav-toggle"><i class="icon_menu"></i></div>
