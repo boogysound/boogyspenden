@@ -1,7 +1,7 @@
 ---
-layout: page
-title: About
-permalink: /about/
+layout: default
+title: Impressum
+permalink: /impressum/
 ---
 
 {{site.data.termine.var1}}
