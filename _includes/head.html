@@ -7,18 +7,18 @@
 
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
 
-  <link href="assets/fonts/font-awesome.css" rel="stylesheet" type="text/css">
-  <link href="assets/fonts/elegant-fonts.css" rel="stylesheet" type="text/css">
+  <link href="{{ "/assets/fonts/font-awesome.css" | prepend: site.baseurl }}" rel="stylesheet" type="text/css">
+  <link href="{{ "/assets/fonts/elegant-fonts.css" | prepend: site.baseurl }}" rel="stylesheet" type="text/css">
   <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700,900' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css" type="text/css">
-  <link rel="stylesheet" href="assets/css/zabuto_calendar.min.css" type="text/css">
-  <link rel="stylesheet" href="assets/css/bootstrap-select.min.css" type="text/css">
-  <link rel="stylesheet" href="assets/revolution/css/settings.css" type="text/css">
-  <link rel="stylesheet" href="assets/revolution/css/layers.css" type="text/css">
-  <link rel="stylesheet" href="assets/revolution/css/navigation.css" type="text/css">
-  <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+  <link rel="stylesheet" href="{{ "/assets/bootstrap/css/bootstrap.css" | prepend: site.baseurl }}" type="text/css">
+  <link rel="stylesheet" href="{{ "/assets/css/zabuto_calendar.min.css" | prepend: site.baseurl }}" type="text/css">
+  <link rel="stylesheet" href="{{ "/assets/css/bootstrap-select.min.css" | prepend: site.baseurl }}" type="text/css">
+  <link rel="stylesheet" href="{{ "/assets/revolution/css/settings.css" | prepend: site.baseurl }}" type="text/css">
+  <link rel="stylesheet" href="{{ "/assets/revolution/css/layers.css" | prepend: site.baseurl }}" type="text/css">
+  <link rel="stylesheet" href="{{ "/assets/revolution/css/navigation.css" | prepend: site.baseurl }}" type="text/css">
+  <link rel="stylesheet" href="{{ "/assets/css/style.css" | prepend: site.baseurl }}" type="text/css">
 
   <!--link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}"-->
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+  <!-- <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}"> -->
 </head>
