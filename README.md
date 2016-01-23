@@ -2,7 +2,7 @@
 
 Hier kommst du schnell zu allen wichtigen Dateien, um sie sofort zu bearbeiten:
 
-- ...
+- [Hintergrundinformationen (Titel, SEO, Email-Adresse, Telefonnummer)](blob/gh-pages/_config.yml)
 
 # So geht's
 
@@ -38,6 +38,6 @@ Wichtige Infos zu den Inhalten der Angebote:
   - Links zu Abschnitten auf der Titelseite beginnen mit # und müssen in Anführungszeichen sein
 
 
-## Seitenabschnitte:
+## Seitenabschnitte
 
 Die Seitenabschnitte haben IDs und eine Reihenfolge. Beide sind wichtig für die Navigation und die Verlinkungen und sollten (erstmal) nicht geändert werden.
