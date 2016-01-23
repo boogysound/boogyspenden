@@ -1,0 +1,30 @@
+# So geht's
+
+Wichtige Hintergrund-Infos zur Seite sind in der `_config.yml` Datei.
+
+Die verschiedenen Angebote sind im Ordner `_angebote` in verschiedenen Dateien gespeichert.
+
+Die Dateien sind im [Markdown Format](http://assemble.io/docs/Cheatsheet-Markdown.html). Das ist eine Sprache zur einfachen Formatierung deiner Texte. Diese README Datei ist z.B. in Markdown formatiert. Schau dir die [Rohform hier](https://raw.githubusercontent.com/jimbroski/boogyspenden/master/README.rdoc) an, um herauszufinden, wie
+
+Zu Beginn jeder Markdown Datei ist ein Bereich mit `---` eingerahmt. Innerhalb dieses Bereiches wird die Sprache [YAML](http://statamic.com/learn/configuring/using-yaml) verwendet, um variablen zu definieren. Es gibt auch Dateien, die nur im YAML Format sind. Die enden dann auf .yml
+
+## Angebote
+
+Wichtige Infos zu den Inhalten der Angebote:
+
+### karussell_bild:
+
+  - In welchem Ordner die Bilder liegen ist egal.
+    Allerdings ist der Standardpfad zu bevorzugen: assets/img/
+  - Der Pfad ist von der index.html Datei ausgehend.
+  - Die Bilder sollten einheitlich im JPG format sein
+  - Die Bilder sollten die selben Dimensionen haben: 1920 × 662
+  - Die Bilder sollten am besten mit einem Image Optimizer möglichst klein gemacht werden.
+
+### 'Call To Action':
+
+  - cta = Call to Action
+  - der cta_link wird im Karussell sowie in der Box darunter verwendet
+  - Externe links müssen immer mit http:// oder https:// beginnen
+  - Interne links zu anderen Seiten beginnen mit /
+  - Links zu Abschnitten auf der Titelseite beginnen mit #
