@@ -1,5 +1,8 @@
-- datum: 12.02.2016
-  zeit: 14:00
+var1: Hallo
+var2: 42
+termine:
+  - datum: 12.02.2016
+    zeit: 14:00
 
-- datum: 12.02.2016
-  zeit: 15:00
+  - datum: 12.02.2016
+    zeit: 15:00
