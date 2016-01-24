@@ -5,7 +5,7 @@ karussell_bild: assets/img/slide.jpg
 karussell_titel_klein:
 karussell_titel_gross: So ist das nämlich!
 karussell_cta_titel: Erzähl mir mehr!
-cta_link: /about
+cta_link: "#kontakt"
 ---
 <!---  Der Text unterhalb erscheint in der Box unter dem Karussell -->
 Lerne _hier_ wie man reich wird.
