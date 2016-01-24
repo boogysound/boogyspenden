@@ -23,8 +23,13 @@
 <![endif]-->
 
 <script type="text/javascript">
-<!-- show carousel only after page loaded -->
+  //Show carousel only after page load
   $(window).load(function(){
     $(".rev-slider").css("visibility","visible");
+  });
+
+  //link to modal
+  $('[href="#kontakt"]').click(function(){
+    $('#kontakt_modal').modal();
   });
 </script>
