@@ -71,6 +71,11 @@ icon: fa fa-paper-plane
   - Externe links müssen immer mit http:// oder https:// beginnen
   - Interne links zu anderen Seiten beginnen mit /
   - Links zu Abschnitten auf der Titelseite beginnen mit # und müssen in Anführungszeichen sein
+  - Um das Kontaktformular per Klick auf den Link zu öffnen musst du zu `#kontaktformular` verlinkten. Denke auch hier an die Anführungszeichen. Z.B. 
+
+```
+cta_link: "#kontaktformular"
+```
 
 
 ## Seitenabschnitte
