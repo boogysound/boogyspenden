@@ -8,5 +8,5 @@ karussell_cta_titel: Erzähl mir mehr!
 cta_link: "#five-steps-to-success"
 ---
 <!---  Der Text unterhalb erscheint in der Box unter dem Karussell -->
-Damit du über dich hinauswachsen kannst, helfe ich dir prsönlich.
+Damit du **über dich hinauswachsen** kannst, helfe ich dir persönlich.
 
